@@ -14,7 +14,7 @@ const STRIPE_APPEARANCE = {
   theme: 'stripe',
   labels: 'floating',
   variables: {
-    fontFamily: 'SourceSansPro, Arial, sans-serif',
+    fontFamily: "'Source Sans Pro', Arial, sans-serif",
     fontSizeBase: '15px',
     colorText: '#1a1a1a',
     colorBackground: '#ffffff',
@@ -29,17 +29,17 @@ const STRIPE_APPEARANCE = {
       border: '1px solid #dddddd',
       boxShadow: 'none',
       padding: '15px 16px',
-      fontFamily: 'SourceSansPro, Arial, sans-serif',
+      fontFamily: "'Source Sans Pro', Arial, sans-serif",
     },
     '.Input:focus': {
       border: '1px solid #1a1a1a',
       boxShadow: 'none',
       outline: 'none',
     },
-    '.Tab': { fontFamily: 'SourceSansPro, Arial, sans-serif' },
-    '.TabLabel': { fontFamily: 'SourceSansPro, Arial, sans-serif' },
-    '.Text': { fontFamily: 'SourceSansPro, Arial, sans-serif' },
-    '.Error': { fontFamily: 'SourceSansPro, Arial, sans-serif' },
+    '.Tab': { fontFamily: "'Source Sans Pro', Arial, sans-serif" },
+    '.TabLabel': { fontFamily: "'Source Sans Pro', Arial, sans-serif" },
+    '.Text': { fontFamily: "'Source Sans Pro', Arial, sans-serif" },
+    '.Error': { fontFamily: "'Source Sans Pro', Arial, sans-serif" },
   },
 };
 

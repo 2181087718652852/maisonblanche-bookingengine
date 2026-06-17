@@ -457,7 +457,7 @@ html, body {
 }
 
 .payment-consent {
-  font-family: Arial, sans-serif;
+  font-family: var(--font);
   font-size: 13px;
   color: var(--color-text-light);
   margin: 16px 0 0;
@@ -497,6 +497,32 @@ html, body {
 .policy-block { margin-bottom: 20px; }
 .policy-block h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
 .policy-block p { font-size: 14px; color: var(--color-text-light); }
+
+.powered-by-badges {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 24px 0 32px;
+}
+
+.powered-by-stripe {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--color-text-light);
+  font-family: var(--font);
+}
+
+.stripe-logo {
+  width: 50px;
+  height: auto;
+}
+
+.pci-dss-logo {
+  width: 80px;
+  height: auto;
+}
 
 .error-msg {
   color: #c0392b;
