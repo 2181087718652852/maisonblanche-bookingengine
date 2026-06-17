@@ -1,4 +1,3 @@
-# ── Build stage ──
 FROM node:20-alpine AS build
 WORKDIR /app
 
@@ -7,8 +6,6 @@ RUN npm ci
 
 COPY . .
 
-# Vite inlines VITE_* env vars at build time.
-# Pass them via Coolify's "Build Arguments" or environment variables.
 ARG VITE_FIREBASE_API_KEY
 ARG VITE_FIREBASE_AUTH_DOMAIN
 ARG VITE_FIREBASE_PROJECT_ID
@@ -29,7 +26,6 @@ ENV VITE_STRIPE_PK=$VITE_STRIPE_PK
 
 RUN npm run build
 
-# ── Serve stage ──
 FROM nginx:alpine
 COPY --from=build /app/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
