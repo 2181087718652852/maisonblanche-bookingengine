@@ -86,7 +86,7 @@ export default function ContactPage() {
       const fullPhone = itiRef.current ? itiRef.current.getNumber() : booking.contactPhone;
       const totalCAD = booking.grandTotal();
       const convertedTotal = booking.convertFromCAD(totalCAD);
-      const res = await fetch('https://api.lamaisonblanche.ca/v1/create-payment-intent', {
+      const res = await fetch('/api/create-payment-intent', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
