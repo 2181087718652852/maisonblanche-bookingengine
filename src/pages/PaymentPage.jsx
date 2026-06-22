@@ -148,7 +148,7 @@ function CheckoutForm() {
     setIsVerifying(false);
 
     try {
-      const verifyRes = await fetch('https://api.lamaisonblanche.ca/v1/verify-turnstile', {
+      const verifyRes = await fetch('/api/verify-turnstile', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ token: turnstileToken }),
