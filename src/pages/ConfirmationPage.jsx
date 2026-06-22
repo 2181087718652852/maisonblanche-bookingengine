@@ -28,7 +28,7 @@ export default function ConfirmationPage() {
     function fireEmails() {
       if (emailsSentRef.current) return;
       emailsSentRef.current = true;
-      fetch('https://api.lamaisonblanche.ca/v1/send-confirmation-emails', {
+      fetch('/api/send-confirmation-emails', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
