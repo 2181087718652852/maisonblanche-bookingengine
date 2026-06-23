@@ -60,7 +60,7 @@ export function BookingProvider({ children }) {
   }, []);
 
   useEffect(() => {
-    fetch('https://api.lamaisonblanche.ca/v1/calendar')
+    fetch('/api/calendar')
       .then((r) => r.json())
       .then((data) => setBookedDates(data.bookedDates || []))
       .catch(() => setBookedDates([]))
